@@ -1,0 +1,258 @@
+@import url(reset.css);
+
+body{
+
+    background-image:linear-gradient(white,rgba(211, 211, 211, 0.541),white);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.925);
+}
+header section:hover{
+    cursor: pointer;
+}
+header section {
+display: block;
+
+}
+
+.top-left{
+    align-content: center;
+    
+}
+.top-left img{
+    height: 30px;
+    padding-left: 10px;
+    
+}
+.top-right{
+    display:flex;
+    flex-direction: row;
+    width: 100px;
+    flex-wrap: nowrap;
+    width: auto;
+    
+}
+.top-right div{
+    align-content: center;
+    display: inline;
+    flex-direction: row;
+    height: 60px;
+}
+#chatinho{
+    display: inline-block;
+    flex-shrink: 0;
+    height: 60px;
+    width: 60px;
+}
+.top-right img{
+    display: inline-block;
+}
+#usuario{
+   width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.top-center input{
+    height: 30px;
+    width: 20vw;
+    border: 1px solid;
+    border-radius: 15px 0 0px  15px;
+}
+.top-center i{
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 80%;
+}
+
+#search{
+    padding-top: 7px;
+    padding-bottom: 13px;
+    height: 12px;
+    margin-left: -4px;
+    background-color: lightgray;
+    border-radius: 0 15px 15px 0;
+}
+.top-center{
+    align-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-left:2vw;
+    width: 95vw;
+    height: 80vh;
+    
+}
+.video-principal iframe{
+    flex: 3 3 80%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+main section {
+ 
+
+}
+.video-principal{
+    flex:1;
+    width: 100%;
+    
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    flex:1
+}
+.conteudo-icones{
+    width: 400vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 30%;
+    justify-content: end;
+    gap: 5px;    
+
+}
+#subscribe{
+    background-color: black;
+    color: white;
+    display: block;
+}
+#subscribe:hover{
+    background-color: gray;
+}
+.conteudo-icones p{
+    background-color: lightgray;
+    width: 120px;
+    border-radius: 20px ;
+    padding: 10px;
+    text-align: center;
+}
+.conteudo-icones p:hover{
+    background-color: gray;
+    color: white;
+}
+
+#like{
+    background-color: lightgray;
+    width: 40px;
+    border-radius: 20px 0 0 20px ;
+    padding: 10px;
+    flex: 0 1 15%;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+#like:hover{
+    background-color: gray;
+    color: white;
+}
+#deslike{
+    background-color: lightgray;
+    margin-left:-8px ;
+    width: 30px;
+    border-radius: 0 20px 20px 0 ;
+    padding: 10px;
+    text-align: center;
+    flex: 0 1 15%;
+}
+#deslike:hover{
+    background-color: gray;
+    color: white;
+    
+}
+.conteudo{
+    display: inline-flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.conteudo-logo{
+    display: inline-flex;
+    align-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.conteudo-logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#foto-canal img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.conteudo-icones:hover{
+    cursor: pointer;
+}
+.barra-lateral{
+    width: 550px;
+    
+}
+.video-relacionado{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    
+    
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height:100px;
+    gap: 10px;
+    padding: 5px;
+}
+#titulo{
+    position: absolute;
+    top: 0;
+    font-size: 14;
+    display: block;
+    width: 210px;
+    
+}
+#autor{
+    position: absolute;
+    top:40%;
+    font-weight: 100;
+    display: block;
+    width: 110px;
+    
+}
+#descricao{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    display: block;
+    width: 210px;
+}
+    
+.video-relacionado img{
+    border-radius: 15px;
+    width: 200px;
+}
+#nome-canal{
+    display: inline-flex;
+    width: 100px;
+    flex-direction: column;
+    align-self: center;
+}
+.barra-lateral img, h4, h5, p:hover{
+    cursor: pointer;
+}
