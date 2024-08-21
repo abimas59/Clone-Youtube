@@ -1,0 +1,205 @@
+@import url(reset.css);
+
+body{
+    display: grid;
+    grid:
+    "header header header header header" 120px
+    "sidebar main main main ." 1fr 
+    "sidebar main main main ."600px / 300px 1fr 1fr 1fr 50px;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+#logo-1:hover{
+    background-color: transparent;
+    padding: 0;
+}
+main{
+    grid-area: main;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap:50px 50px   
+}
+.item{
+    background-color: palegreen;
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+aside{
+    margin-top: -30px;
+    padding-top: 30px;
+    background-color:white;
+    grid-area:sidebar;
+    font-size: 26px;
+    padding-left: 15px;
+}
+aside section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    
+}
+aside img{
+    height: 30px;
+}
+aside h6{
+    font-weight: 100;
+}
+
+aside img, h6:hover{
+    cursor: pointer;
+}
+body{
+    background-image:linear-gradient(white,rgba(211, 211, 211, 0.541),white);
+}
+/* header{
+    grid-area: header;
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.925);
+    flex: 0 0 fixed ;
+} */
+header{
+    grid-area: header;
+    display: grid;
+    grid:"left . center . right" 1fr;
+    justify-content: space-between;
+    padding: 15px;
+}
+header section:hover{
+    cursor: pointer;
+}
+.top-left{
+    align-content: center;
+    grid-area: left;
+}
+.top-left img{
+    height: 30px;
+    padding-left: 10px;
+}
+.top-center{
+    grid-area: center;
+}
+@media(max-width: 600px){
+    #input{
+        display: none;
+    }
+}
+.top-right{
+    display:block;
+    align-content: center;
+    grid-area: right;
+}
+.top-right section{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;   
+    gap: 20px;    
+    height: 60px;
+    
+}
+.top-right img{
+    display: inline-block;
+}
+#usuario{
+   width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.top-center input{
+    height: 30px;
+    width: 20vw;
+    border: 1px solid;
+    border-radius: 15px 0 0px  15px;
+}
+.top-center i{
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 80%;
+}
+
+#search{
+    padding-top: 7px;
+    padding-bottom: 13px;
+    height: 12px;
+    margin-left: -4px;
+    background-color: lightgray;
+    border-radius: 0 15px 15px 0;
+}
+.top-center{
+    align-content: center;
+}
+
+.video-relacionado{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 260px;
+    height:250px;
+    gap: 10px;
+    padding: 5px;
+}
+.video-relacionado div{
+    align-self: center;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#titulo{
+    font-size: 14;
+    display: block;
+    width: 210px;
+}
+#autor{
+    font-weight: 100;
+    display: block;
+    width: 110px;
+    justify-self: start;
+    align-self: center;
+}
+#descricao{
+    font-size: 14px;
+    display: block;
+    width: 150px;
+}
+.video-relacionado img{
+    border-radius: 15px;
+    width: 250px;
+    height:140px;
+    align-self: flex-start;
+}
+.video-relacionado img, h4, h5, p:hover{
+    cursor: pointer;
+}
+#usuario{
+    grid-area:foto;
+}
+.video-relacionado div{
+    display: grid;
+    grid:"foto texto" 1fr
+        "foto texto2" 1fr
+        "foto texto3" 1fr;
+}
