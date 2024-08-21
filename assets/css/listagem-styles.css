@@ -27,7 +27,7 @@ main{
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap:50px 50px   
+    gap:61px 61.5px   
 }
 .item{
     background-color: palegreen;
@@ -171,7 +171,7 @@ header section:hover{
 #titulo{
     font-size: 14;
     display: block;
-    width: 210px;
+    width: 180px;
 }
 #autor{
     font-weight: 100;
@@ -187,7 +187,7 @@ header section:hover{
 }
 .video-relacionado img{
     border-radius: 15px;
-    width: 250px;
+    width: 100%;
     height:140px;
     align-self: flex-start;
 }
@@ -202,4 +202,10 @@ header section:hover{
     grid:"foto texto" 1fr
         "foto texto2" 1fr
         "foto texto3" 1fr;
+}
+#foto-curriculo:hover{
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+
 }

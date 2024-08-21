@@ -16,6 +16,7 @@ header{
     justify-content: space-between;
     padding: 15px;
 }
+
 h1{
     font-size: 20px;
     font-weight: 700;
@@ -332,4 +333,9 @@ header section:hover{
 }
 .top-center{
     align-content: center;
+}
+#foto-curriculo:hover{
+    padding: 0;
+    background-color: transparent;
+
 }
